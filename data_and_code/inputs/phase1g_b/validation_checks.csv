@@ -1,0 +1,23 @@
+﻿check,status,detail
+Plan_hash_unchanged,PASS,
+Plan_precedes_this_round_calculation,PASS,User supplied previous exploratory results before freezing; not preregistration
+Input_hash_all90_predictions_frozen.csv,PASS,
+Input_hash_toxicity_trial_evidence_frozen.csv,PASS,
+Phase1F_no_edits,PASS,114 original assets; changed=[]
+External_and_internal_files_separate,PASS,
+Unique90_direction_keys,PASS,
+Official_boundary_ownership_spec,PASS,
+Independent_mg_L_classification_agrees,PASS,
+Signed_category_direction_and_partition,PASS,
+Matched_methods_exact_same_directions,PASS,
+Identity_formula_and_independent_FE,PASS,
+Independent_WebICE_error_recalculation,PASS,
+Five_assay_CIs_only,PASS,
+CI_point_and_class_sets_consistent,PASS,
+Target_CI_compatibility_independently_checked,PASS,
+Mismatch_uncertainty_parts_sum,PASS,
+Target_primary_aggregation_and_coverage,PASS,
+No_self_prediction,PASS,
+Model_fitting_not_executed_in_stage,PASS,Only frozen concentrations and metadata used
+Scripts_parse,PASS,
+Three_exploratory_figures_present,PASS,

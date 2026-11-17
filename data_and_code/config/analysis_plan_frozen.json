@@ -1,0 +1,115 @@
+{
+  "stage": "Phase1G-B minimal hazard-classification validation",
+  "created_utc": "2026-11-12T13:42:49.786378+00:00",
+  "client_date": "2026-11-12 Asia/Shanghai",
+  "timing": "Written before this round outcome calculations; prior Phase1E/F findings and user-supplied exploratory counts/medians were already known. This is NOT prospective independent preregistration.",
+  "primary_compounds": [
+    "inpyrfluxam",
+    "isopyrazam"
+  ],
+  "supporting_internal_compounds": [
+    "fluxapyroxad",
+    "benzovindiflupyr",
+    "bixafen",
+    "sedaxane",
+    "penthiopyrad",
+    "pydiflumetofen"
+  ],
+  "data": "Frozen Phase1F 90-direction concentrations/coefficients/flags, original source endpoint CSV and enriched trial evidence only. No retraining or new Web-ICE execution.",
+  "classification": {
+    "framework": "EPA OPP aquatic acute ecotoxicity qualitative five-class descriptors; species-endpoint screening comparison, not actual product or chemical-wide regulatory classification",
+    "primary_mg_L": [
+      "0 < LC50 < 0.1",
+      "0.1 <= LC50 <= 1",
+      "1 < LC50 <= 10",
+      "10 < LC50 <= 100",
+      "LC50 > 100"
+    ],
+    "ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "names": [
+      "Very highly toxic",
+      "Highly toxic",
+      "Moderately toxic",
+      "Slightly toxic",
+      "Practically nontoxic"
+    ],
+    "thresholds_ug_L": [
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "boundary_basis": "Current EPA technical overview table: <0.1;0.1–1;>1–10;>10–100;>100 mg/L. Historical 1985 OCR and some subsequent summaries are typographically ambiguous at exact cutoffs; explicit current-table convention used.",
+    "boundary_sensitivity": "Same thresholds, assign all exact equalities to the higher-hazard adjacent class; never move thresholds. Use stored precision, no rounding or epsilon reclassification.",
+    "category_shift": "predicted_rank - observed_rank; positive = lower predicted toxicity category (underestimation of hazard); absolute shift = number of class boundaries crossed",
+    "continuous_underestimation": "predicted LC50 > observed LC50, distinct from category underestimation",
+    "proximity": "nearest absolute log10 distance to any official threshold; near flag within factor2 (diagnostic only, not EPA rule). Report observed and predicted distances separately."
+  },
+  "uncertainty": {
+    "endpoint_status": [
+      "CI entirely within a single class",
+      "CI spans/touches classes",
+      "CI missing"
+    ],
+    "quality_status": "Orthogonal specific-quality flag, not a fourth mutually exclusive CI status: known replicate mortality issue or measured-concentration deviations; original-report unavailability documented separately for all.",
+    "CI_interpretation": "Closed reported experimental 95% LC50 CI. Compute all possible classes over [lower,upper]. This is a compatibility-set diagnostic, not a posterior probability or simultaneous 95% guarantee.",
+    "direction_status": "For a point-class mismatch: target CI missing -> indeterminate_missing_CI; prediction class outside target-CI class set -> target_CI_incompatible; prediction class inside set -> indeterminate_CI_compatible. Point matches get separate compatibility labels.",
+    "robust_label": "target-CI-incompatible means conditional on the reported target interval and a fixed predicted point; does not establish certain model error and does not propagate surrogate bioassay uncertainty or model uncertainty.",
+    "sources": "Use available five isopyrazam assay CIs; do not invent inpyrfluxam or internal-compound CIs. HSE alternative inpyrfluxam point readings compared only for endpoint class stability; frozen predictions unchanged.",
+    "quality_sensitivity": "Report omission of inpyrfluxam bluegill as target and as either target/surrogate separately; do not silently exclude all flagged concentration-deviation studies."
+  },
+  "baseline": {
+    "formula": "target prediction = frozen observed surrogate input_ug_L (identity transfer)",
+    "pairing": "Exactly identical compound/surrogate/target directions for Web-ICE and identity; no self predictions or post-hoc surrogate choice",
+    "metrics": [
+      "fold error",
+      "signed log10 error",
+      "absolute log10 error",
+      "continuous LC50 underestimation",
+      "category mismatch",
+      "category underestimation",
+      "target-CI incompatibility"
+    ],
+    "deltas": "Web-ICE minus identity absolute log10 error, FE, category mismatch indicator and underestimation indicators; negative error delta favors Web-ICE. Target-level MAE difference is principal accuracy comparison.",
+    "uncertainty": "Apply the same target-CI compatibility evaluation to both fixed point predictions. Preserve surrogate CI availability as a limitation; no interval-overlap p-value or model-CI-as-assay-CI substitution."
+  },
+  "summaries": {
+    "primary_unit": "Species–compound target endpoint (7 inpyrfluxam +5 isopyrazam), with n_surrogates, category-specific counts/rates, target MAE and paired differences",
+    "secondary_units": "Surrogate–compound summaries and all-direction descriptive totals; compounds reported separately; internal six never pooled into external conclusions",
+    "macro": "Equal-target average of target rates/MAE among covered targets; report target coverage and range of target performance. Direction-level median FE also reported for direct audit but not an independent sample statistic.",
+    "target_effect_count": "Count targets where mean paired delta favors Web-ICE, identity or ties; no winner inferred from directions as independent replicates",
+    "inference": "Descriptive only; no p-values, binomial confidence intervals, direction-level bootstrap or inferential claim from n=52. No pooled eight-compound external claim."
+  },
+  "scenarios": [
+    "ALL_AVAILABLE (primary)",
+    "GUIDANCE_AND_DOMAIN (frozen guidance_pass and in_domain)",
+    "STRICT_QUALITY (GUIDANCE_AND_DOMAIN plus MSE<=0.5 and n_training>=10)",
+    "TARGET_AWAY_FACTOR2 (observed target more than factor2 from all cutoffs; coverage displayed)",
+    "EXCLUDE_BLUEGILL_TARGET (inpyrfluxam only)",
+    "EXCLUDE_BLUEGILL_EITHER_ROLE (inpyrfluxam only)"
+  ],
+  "scope_limits": [
+    "No new compounds",
+    "No new training",
+    "No docking/MD",
+    "No manuscript edits",
+    "No formal submission-figure redraw",
+    "No PMS submission materials",
+    "Only 3 exploratory figures and bounded statistical analysis"
+  ],
+  "decision_rules": {
+    "GO": "Practically meaningful class discrepancies remain supported by available uncertainty information, accompanied by target-level pattern and defensible incremental model comparison; suitable to proceed to independent chemical validation, not proof of publication readiness.",
+    "CONDITIONAL_GO": "Potentially informative classification/baseline differences, but limited by two compounds, missing or cross-boundary CIs, target dependence, or inconsistent transfer; independent compound evidence needed before a general safety-evaluation claim.",
+    "NO_GO": "No informative uncertainty-supported category discrepancy or model-gain pattern beyond threshold/endpoint uncertainty/dependence; avoid adding data solely to seek positive findings."
+  },
+  "source_urls": [
+    "https://www.epa.gov/pesticide-science-and-assessing-pesticide-risks/technical-overview-ecological-risk-assessment-0",
+    "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100WHVJ.TXT"
+  ]
+}

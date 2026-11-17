@@ -1,0 +1,5 @@
+﻿compound,category,independence,primary_exact_species_upper_bound,strict_new_external_species,potential_catalogue_directions,currently_qualified_external_directions,reason
+flutolanil,C,confirmed overlap,3,0,12,0,训练中存在鲤鱼/虹鳟/黑头呆鱼及相应配对；不属于新增独立化合物
+thifluzamide,B,no match in 3 public sheets; trial IDs incomplete,2,1,10,0,鲤鱼官方CI明确；斑马鱼摘要元数据未齐；虹鳟/蓝鳃仅SDS线索；鲤鱼↔斑马鱼无模型
+penflufen,C,confirmed overlap,1,0,2,0,训练中鲤鱼↔黑头呆鱼两方向有该化合物；监管慢性NOEC不是第二急性终点
+fluopyram,C,no match in 3 public sheets; not full independence certification,2,1,18,0,3种鱼主要为删失值；鲤鱼析出限制；斑马鱼元数据未齐；精确值不足3鱼种且鲤鱼↔斑马鱼无模型

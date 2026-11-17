@@ -1,0 +1,5 @@
+# Computational assistance
+
+OpenAI ChatGPT and Codex assisted with the initial study design, literature searches, and identification and organization of public regulatory sources. During data analysis and figure preparation, AI tools assisted with writing and revising analytical and plotting code, checking derived results against the frozen data, and preparing figures. During manuscript preparation and revision, AI tools assisted with language polishing and structural refinement. No original experimental measurements or regulatory source records were generated, fabricated or altered by AI. All AI-assisted activities were conducted under the supervision of the authors. All authors take full responsibility for the verification and accuracy of the research data, analytical code, figures, references, scientific interpretations, and final manuscript.
+
+Tool names reflect the available research record. No more specific public model snapshot or product build is asserted. This declaration describes AI-assisted research activities; final author approval of the submitted paper must be recorded separately.

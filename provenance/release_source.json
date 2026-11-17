@@ -1,0 +1,8 @@
+{
+  "version": "1.0.2-public.1",
+  "source_submission_zip_sha256": "e991bd9f3236c780fff1269cb9a3ce83827ba0f1ff0271fd9abb793fc30a4d08",
+  "anonymous_attachment_sha256": "d039026ed70c63575565e81cbb67d84f381a6c15a5326fbcac293c1d5bf3178a",
+  "scientific_files": "byte-identical copies; no formula edits",
+  "licensing": "No new blanket licence assigned",
+  "excluded": "Manuscripts, editor-only files, original reports, full texts/SI, training workbooks and private QA material"
+}

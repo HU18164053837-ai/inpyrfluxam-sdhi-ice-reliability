@@ -1,0 +1,11 @@
+﻿dimension,Xu2024_fulltext_fact,locator,current_study,novelty_boundary,evidence_status
+研究目标,全球SDHI污染分布、ICE–SSD与暴露风险商,"pp1–3,sections1–2.4",实测鱼端点约束下误差、基线和危害描述的一致性,相邻但不同的应用问题，不宣称ICE/SDHI首创,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+资料范围,194环境、6地区；混合水生端点，优先敏感值,p2section2.1;p3section2.2,8化合物30物种–化合物端点；2外部候选/6条件性内部,本研究面板更小；不以规模主张创新,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+模型版本,Web-ICEv3.2,p3section2.2,v4.0固定公开快照；2294物种模型目录,版本差异本身不是方法创新,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+模型筛选,"R²>0.6,MSE<0.95,slope>0.6,CV>60%,distance<4,p<0.01,narrowCI",p3section2.2,沿用既有v4指导筛选，另外记录输入范围和覆盖,不能称首次用模型质量指标,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+多代理,SI Tables5–8代理预测与筛选,p4section3.2及已核查SI,输入约束选择规则及同目标比较；策略B探索性,多代理概念已存在；不宣称通用最佳规则,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+误差及基线,全文关注污染、SSD及风险；未见本研究式identity-transfer配对类别验证,pp3–8sections2.2–4；SI表5–12,同方向FE、目标MAE、身份传递与类别偏差配对,提供有限案例验证增量；不以未见某术语证明全球首创,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+验证独立性,全文所述方法未列本项目的训练CAS分层/整化合物留出方案,pp3–4sections2.2–3.2,无公开命中外部候选与训练重叠条件内部单列,是解释证据强度，非指控原文不当泄漏,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+实验CI与模型CI,模型窄CI为筛选条件；SSD输出有区间,p3sections2.2–2.3;p5Fig3,区分模型均值CI/个体PI/目标实验CI类别集合,固定预测的条件不相容，不是完全不确定性传播,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+源数据重叠,Isopyrazam鲤鱼25.8；斑马鱼胚胎234μg/L,已核查SI Table3,鲤鱼25.8共享数值；普通鱼300μg/L,不得标成全部新实验；胚胎不可混为普通鱼,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16
+管理结论,SDHI监测、SSD保护值及RQ评价,pp6–8sections3.2–4,端点筛查可靠性；不估计环境暴露或实际风险,科学增量收窄为评价证据，非完整风险评价替代,FULL_TEXT_AND_PREVIOUS_SI_CHECKED_2026_11_16

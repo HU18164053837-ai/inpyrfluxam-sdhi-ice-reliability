@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.pem
+*.key
+data_and_code/reproduction_check/
+validation_tmp/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this research software archive. The associated manuscript is unpublished; no article DOI or acceptance is claimed."
+type: software
+title: "Reliability and Limitations of Interspecies Aquatic Toxicity Extrapolation: Evidence from Inpyrfluxam and Other Succinate Dehydrogenase Inhibitor Fungicides"
+version: "1.0.2-public.1"
+authors:
+  - family-names: Hu
+    given-names: Yi
+  - family-names: Li
+    given-names: Jiayao
+  - family-names: Jia
+    given-names: Yiheng
+  - family-names: Li
+    given-names: Jiran
+  - family-names: Li
+    given-names: Zesen
+repository-code: "https://github.com/HU18164053837-ai/inpyrfluxam-sdhi-ice-reliability"
+url: "https://github.com/HU18164053837-ai/inpyrfluxam-sdhi-ice-reliability"
+abstract: "Frozen-data reproducibility archive for an evaluation of interspecies aquatic toxicity extrapolation; dependent directions are not independent experiments."

@@ -1,0 +1,20 @@
+{
+  "title": "Reliability and Limitations of Interspecies Aquatic Toxicity Extrapolation: Evidence from Inpyrfluxam and Other Succinate Dehydrogenase Inhibitor Fungicides",
+  "timestamp_local": "2026-11-11T15:38:49.725004",
+  "status": "Rules frozen before Phase1E strategy outcomes; Phase1D outcomes already seen; exploratory comparison, not preregistration",
+  "eligible": "Species-level models; exact positive surrogate endpoint; inside numerical input domain; MSE<0.95,R2>0.6,slope0.6-1.4,official95%meanCIwidth<=100-fold. No failed-model fallback.",
+  "A_quality": "Among eligible: smallest MSE; ties highest R2,largest training n,scientific surrogate name",
+  "B_domain": "Among eligible: smallest training-only leverage h=1/n+(log10input-xmean)^2/Sxx; ties smallest MSE,scientific name. No hyperparameter tuning.",
+  "C_geomean": "Equal mean of eligible log10 predictions; even singleton allowed but flagged; no ensemble PI claimed",
+  "C_median": "Median of eligible log10 predictions; singleton flagged; no fitted weights",
+  "D_rainbow": "Available frozen model with Oncorhynchus mykiss; no self prediction; report quality/domain rather than assume optimal",
+  "D_zebrafish": "Available frozen model with Danio rerio; no self prediction; report quality/domain",
+  "sensitivity": "Alternative HSE focal endpoints; stricter MSE<=0.5 and n>=10; C at least two eligible surrogates; same target comparisons; leave-one-compound-out descriptive summaries for trout direction",
+  "independence": "2 external candidates, no detected overlap public paired training; original full database independence not fully verified. 6 conditional compound-held-out internal sensitivity; published model topology and public preprocessing retained, so not strict nested model-development validation.",
+  "prohibited_selection_fields": [
+    "target_LC50",
+    "target_prediction_error",
+    "best_observed_surrogate"
+  ],
+  "no_new_structure_calculations": true
+}
