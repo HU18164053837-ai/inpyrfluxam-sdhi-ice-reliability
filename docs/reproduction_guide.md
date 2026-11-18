@@ -7,9 +7,9 @@ From the repository root:
 python -m pip install -r requirements.txt
 python data_and_code/scripts/test_reproduce_review.py
 python data_and_code/scripts/reproduce_review.py
+python scripts/check_checksums.py
 python data_and_code/scripts/figures.py
 python data_and_code/scripts/supplementary_figures.py
-python scripts/check_checksums.py
 ```
 
 Statistics and comparator tests use only the standard library; plotting uses
@@ -32,3 +32,4 @@ authoritative frozen input location, supplementary/tables holds archived researc
 tables and figures contains the frozen visuals. Original relative-path imports
 to optional project tools are inert when absent; installed dependencies suffice.
 The comparator and source scripts retain v1.0.2 logic without formula/path edits.
+
